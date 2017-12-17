@@ -1,0 +1,74 @@
+$(function() {
+    var seeking;
+    var willing;
+    $(".girls-div").show();
+    $(".guys-div").hide();
+
+    $('#ex1').slider({
+        formatter: function(value) {
+            return '';
+        }
+    });
+
+    $(".radar").hide();
+    $(".quiz-modal").hide();
+    $(".view2").hide();
+    $(".view3").hide();
+    $(".view4").hide();
+    $(".view5").hide();
+    $(".view6").hide();
+    $(".view7").hide();
+    $(".view8").hide();
+    $(".view9").hide();
+    $(".view10").hide();
+
+
+    $(window).load(function() {
+
+        $('#warning').modal('show');
+    });
+
+    $('.modal').removeData('bs.modal').modal({ backdrop: 'static', keyboard: false });
+
+    $('.modal-btn').click(function() {
+        $(".radar").delay(600).fadeIn();
+        $(".radar").delay(2600).fadeOut(0);
+        $(".quiz-modal").delay(3400).fadeIn();
+    });
+    $('.close-view-1').click(function() {
+        $(".view1").hide();
+        $(".view2").show();
+    });
+    $('.close-view-2').click(function() {
+        $(".view2").hide();
+        $(".view3").show();
+    });
+    $('.close-view-3').click(function() {
+        $(".view3").hide();
+        $(".view4").show();
+    });
+    $('.close-view-4').click(function() {
+        $(".view4").hide();
+        $(".view5").show();
+    });
+    $('.close-view-5').click(function() {
+        $(".view5").hide();
+        $(".view6").show();
+    });
+    $('.close-view-6').click(function() {
+        $(".view6").hide();
+        $(".view7").show();
+    });
+    $('.close-view-7').click(function() {
+        $(".view7").hide();
+        $(".view8").show();
+    });
+    $('.close-view-8').click(function() {
+        $(".view8").hide();
+        $(".view9").show();
+    });
+    $('.close-view-9').click(function() {
+        $(".view9").hide();
+        $(".view10").show();
+    });	
+});
